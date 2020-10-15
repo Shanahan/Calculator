@@ -1,0 +1,26 @@
+C:\Users\Ashan\Dropbox\My PC (LAPTOP-OFMAIK7L)\Desktop\Games Technology BSc\Programming for Game Development\Coursework\Calculator - coursework 1\Calculator - coursework 1\obj\Debug\netcoreapp3.1\Calculator - coursework 1.csprojAssemblyReference.cache
+C:\Users\Ashan\Dropbox\My PC (LAPTOP-OFMAIK7L)\Desktop\Games Technology BSc\Programming for Game Development\Coursework\Calculator - coursework 1\Calculator - coursework 1\obj\Debug\netcoreapp3.1\Calculator - coursework 1.AssemblyInfoInputs.cache
+C:\Users\Ashan\Dropbox\My PC (LAPTOP-OFMAIK7L)\Desktop\Games Technology BSc\Programming for Game Development\Coursework\Calculator - coursework 1\Calculator - coursework 1\obj\Debug\netcoreapp3.1\Calculator - coursework 1.AssemblyInfo.cs
+C:\Users\Ashan\Dropbox\My PC (LAPTOP-OFMAIK7L)\Desktop\Games Technology BSc\Programming for Game Development\Coursework\Calculator - coursework 1\Calculator - coursework 1\obj\Debug\netcoreapp3.1\Calculator - coursework 1.csproj.CoreCompileInputs.cache
+C:\Users\Ashan\Dropbox\My PC (LAPTOP-OFMAIK7L)\Desktop\Games Technology BSc\Programming for Game Development\Coursework\Calculator - coursework 1\Calculator - coursework 1\bin\Debug\netcoreapp3.1\Calculator - coursework 1.exe
+C:\Users\Ashan\Dropbox\My PC (LAPTOP-OFMAIK7L)\Desktop\Games Technology BSc\Programming for Game Development\Coursework\Calculator - coursework 1\Calculator - coursework 1\bin\Debug\netcoreapp3.1\Calculator - coursework 1.deps.json
+C:\Users\Ashan\Dropbox\My PC (LAPTOP-OFMAIK7L)\Desktop\Games Technology BSc\Programming for Game Development\Coursework\Calculator - coursework 1\Calculator - coursework 1\bin\Debug\netcoreapp3.1\Calculator - coursework 1.runtimeconfig.json
+C:\Users\Ashan\Dropbox\My PC (LAPTOP-OFMAIK7L)\Desktop\Games Technology BSc\Programming for Game Development\Coursework\Calculator - coursework 1\Calculator - coursework 1\bin\Debug\netcoreapp3.1\Calculator - coursework 1.runtimeconfig.dev.json
+C:\Users\Ashan\Dropbox\My PC (LAPTOP-OFMAIK7L)\Desktop\Games Technology BSc\Programming for Game Development\Coursework\Calculator - coursework 1\Calculator - coursework 1\bin\Debug\netcoreapp3.1\Calculator - coursework 1.dll
+C:\Users\Ashan\Dropbox\My PC (LAPTOP-OFMAIK7L)\Desktop\Games Technology BSc\Programming for Game Development\Coursework\Calculator - coursework 1\Calculator - coursework 1\bin\Debug\netcoreapp3.1\Calculator - coursework 1.pdb
+C:\Users\Ashan\Dropbox\My PC (LAPTOP-OFMAIK7L)\Desktop\Games Technology BSc\Programming for Game Development\Coursework\Calculator - coursework 1\Calculator - coursework 1\obj\Debug\netcoreapp3.1\Calculator - coursework 1.dll
+C:\Users\Ashan\Dropbox\My PC (LAPTOP-OFMAIK7L)\Desktop\Games Technology BSc\Programming for Game Development\Coursework\Calculator - coursework 1\Calculator - coursework 1\obj\Debug\netcoreapp3.1\Calculator - coursework 1.pdb
+C:\Users\Ashan\Dropbox\My PC (LAPTOP-OFMAIK7L)\Desktop\Games Technology BSc\Programming for Game Development\Coursework\Calculator - coursework 1\Calculator - coursework 1\obj\Debug\netcoreapp3.1\Calculator - coursework 1.genruntimeconfig.cache
+C:\Users\Ashan\4019CEM\4019CEM-Coursework-SID10819476\Calculator - coursework 1\Calculator - coursework 1\bin\Debug\netcoreapp3.1\Calculator - coursework 1.exe
+C:\Users\Ashan\4019CEM\4019CEM-Coursework-SID10819476\Calculator - coursework 1\Calculator - coursework 1\bin\Debug\netcoreapp3.1\Calculator - coursework 1.deps.json
+C:\Users\Ashan\4019CEM\4019CEM-Coursework-SID10819476\Calculator - coursework 1\Calculator - coursework 1\bin\Debug\netcoreapp3.1\Calculator - coursework 1.runtimeconfig.json
+C:\Users\Ashan\4019CEM\4019CEM-Coursework-SID10819476\Calculator - coursework 1\Calculator - coursework 1\bin\Debug\netcoreapp3.1\Calculator - coursework 1.runtimeconfig.dev.json
+C:\Users\Ashan\4019CEM\4019CEM-Coursework-SID10819476\Calculator - coursework 1\Calculator - coursework 1\bin\Debug\netcoreapp3.1\Calculator - coursework 1.dll
+C:\Users\Ashan\4019CEM\4019CEM-Coursework-SID10819476\Calculator - coursework 1\Calculator - coursework 1\bin\Debug\netcoreapp3.1\Calculator - coursework 1.pdb
+C:\Users\Ashan\4019CEM\4019CEM-Coursework-SID10819476\Calculator - coursework 1\Calculator - coursework 1\obj\Debug\netcoreapp3.1\Calculator - coursework 1.csprojAssemblyReference.cache
+C:\Users\Ashan\4019CEM\4019CEM-Coursework-SID10819476\Calculator - coursework 1\Calculator - coursework 1\obj\Debug\netcoreapp3.1\Calculator - coursework 1.AssemblyInfoInputs.cache
+C:\Users\Ashan\4019CEM\4019CEM-Coursework-SID10819476\Calculator - coursework 1\Calculator - coursework 1\obj\Debug\netcoreapp3.1\Calculator - coursework 1.AssemblyInfo.cs
+C:\Users\Ashan\4019CEM\4019CEM-Coursework-SID10819476\Calculator - coursework 1\Calculator - coursework 1\obj\Debug\netcoreapp3.1\Calculator - coursework 1.csproj.CoreCompileInputs.cache
+C:\Users\Ashan\4019CEM\4019CEM-Coursework-SID10819476\Calculator - coursework 1\Calculator - coursework 1\obj\Debug\netcoreapp3.1\Calculator - coursework 1.dll
+C:\Users\Ashan\4019CEM\4019CEM-Coursework-SID10819476\Calculator - coursework 1\Calculator - coursework 1\obj\Debug\netcoreapp3.1\Calculator - coursework 1.pdb
+C:\Users\Ashan\4019CEM\4019CEM-Coursework-SID10819476\Calculator - coursework 1\Calculator - coursework 1\obj\Debug\netcoreapp3.1\Calculator - coursework 1.genruntimeconfig.cache
