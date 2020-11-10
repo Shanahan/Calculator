@@ -12,38 +12,51 @@ namespace Calculator___coursework_1
         {
 
             Console.WriteLine("Welcome to this scientific calculator Please follow the attached instructions to use!");
-            // starting screen for user
+            // starting screen for user, will only be printed once as it sits outside of the while loop for operations.
 
             string userInput = "";
             // string declared for user inut and assigned a null value. To be overwritten with Console.ReadLine (the users input) within the while loop
 
             float Ans = 0;
+            // initial creation of saved answer float is created and default value set to 0.
+
+            bool firstNumberSane = false;
+            bool secondNumberSane = false;
+            bool operatorSane = false;
+            // Sanity bools created for all 3 elements of the users input. Default values set to false, so they have to be called, checked and passed, for the calculations to be done.
+
 
             while (userInput != "exit")
-                // While loop designed to keep the console open and all operations running for as long as the user input is not the word "exit". This allows for continued use/ operations.
+            // While loop designed to keep the console open and all operations running for as long as the user input is not the word "exit". This allows for continued use/ operations.
             {
-
+                // userInput string overwritten with the users actual input through COnsole.ReadLine.
                 userInput = Console.ReadLine();
 
                 int arrayNumber = 0;
+                // integer arrayNumber declared to be used as indices within array. Set to 0 as default, as this is where the array will begin.
+
                 string[] finalArray = new string[3];
-                // uses array to store each number and operator as strings because Console.ReadLine geneates string results.
+                finalArray[0] = "";
+                finalArray[1] = "";
+                finalArray[2] = "";
+                // uses array to store each number and operator as strings because Console.ReadLine geneates string results. Sets default values to null so that they can be used immediately.
+
 
                 if (userInput == "exit")
-                    // allows user to exit application. As this is the first if statement, should t prove to be true none of the other code will be compiled and the application is terminated 
-                    // as per the users wish. 
+                // allows user to exit application. As this is the first if statement, should t prove to be true none of the other code will be compiled and the application is terminated 
+                // as per the users wish. 
                 {
                     System.Environment.Exit(0);
                 }
 
                 else if (userInput == "clr")
-                    // resets saved answer to 0 from specified uer input. As this is within the while loop the calculator will stay open for the users next instructions.                   
+                // resets saved answer to 0 from specified uer input. As this is within the while loop the calculator will stay open for the users next instructions.                   
                 {
                     Ans = 0;
                 }
 
                 else
-                    // execution  of main calculation features only reached after the above bools are checked.
+                // execution  of main calculation features only reached after the above bools are checked.
                 {
                     for (int i = 0; i < userInput.Length; i++)
                     {
@@ -143,7 +156,7 @@ namespace Calculator___coursework_1
                                 // sine string added to array for later use
                                 // when operation is reached arrayNumber is increased by 1, so we enter the next index of the array - finalArray[]. 
                                 // The operator is then stored in that array, before arrayNumber is increased again for the next element to be configured in the next finalArray[] index.
-                                // As there is only one input value for sine function the value 0 is assigned to the next index of finalArray[]. This is not used wen the function is called.
+                                // As there is only one input value for sine function the value 0 is assigned to the next index of finalArray[]. This is not used when the function is called.
                                 arrayNumber++;
                                 finalArray[arrayNumber] = finalArray[arrayNumber] + userInput[i];
                                 arrayNumber++;
@@ -161,21 +174,88 @@ namespace Calculator___coursework_1
                                 break;
 
                             case 'A':
+                                // If user calls the previous answer the stored variable from the previous calculation. This is converted to a string to satisfy the parameters  of finalArray. It will
+                                // converted to a float when it is assigned to InA or InC. arrayNumber is not changed because the input following A should be an operator which already have logic to change
+                                // index.
                                 finalArray[arrayNumber] = Convert.ToString(Ans);
                                 break;
 
                             default:
                                 // default case for assembling numbers. As the userInput string is being read through character by character numbers are broken down. This default simply adds each
-                                // new character to the current array, effectively concatenating numbers. For exaple userInput "322" is read as characters '3', '2', & '2' - this default re-creates "322". 
+                                // new character to the current array, effectively concatenating numbers. For example userInput "322" is read as characters '3', '2', & '2' - this default re-creates "322". 
                                 finalArray[arrayNumber] = finalArray[arrayNumber] + userInput[i];
                                 break;
                         }
 
                     }
 
+                    firstNumberSane = Sanitize(finalArray[0]);
+                    secondNumberSane = Sanitize(finalArray[2]);
+                    // Sanitize function is called first the first and third arrays, which should be numbers. The bool returned by the Sanitize function which operates on the finalArray[] is then assigned to the
+                    // santy bools firstNumberSane and SecondNumberSane.
+
+                    switch (finalArray[1])
+                    {
+                        case "+":
+                            operatorSane = true;
+                            break;
+
+                        case "M":
+                            operatorSane = true;
+                            break;
+
+                        case "*":
+                            operatorSane = true;
+                            break;
+
+                        case "/":
+                            operatorSane = true;
+                            break;
+
+                        case "^":
+                            operatorSane = true;
+                            break;
+
+                        case "R":
+                            operatorSane = true;
+                            break;
+
+                        case "I":
+                            operatorSane = true;
+                            break;
+
+                        case "!":
+                            operatorSane = true;
+                            break;
+
+                        case "|":
+                            operatorSane = true;
+                            break;
+
+                        case "S":
+                            operatorSane = true;
+                            break;
+                    }
+                    // operatorSane is defaulted to false. Using the switch statement above if the second final array, which is the operator, matches any of the specified inputs to use as an operator, then 
+                    // operatorSane becomes true. if the input was anything other than one of the viable characters listed then operatorSane remains false.
+
+                    if (!firstNumberSane || !secondNumberSane || !operatorSane)
+                    // uses or comparison operator to check if any of the sanity checks were failed. If one or more are false then the if statement is executed. This writes a message to the user, and then continue
+                    // is used to return to the start of the while loop this statement is encapsulated in.
+                    {
+                        Console.WriteLine("You have entered an incompatible input, please try again");
+                        continue;
+                    }
+
                     float inA = float.Parse(finalArray[0]);
+                    // first number will be stored as a string in the first array [0] because of the default case, this is cast to a float to be used in calculations as the first input.
                     string inB = finalArray[1];
+                    // the second array is the operator as all specified operators had logic specified to move up an index when reached, and were then saved. These are stored as strings to be used
+                    // with comparison operators below and the corresponding function is called.
                     float inC = float.Parse(finalArray[2]);
+                    // after all operators the case logic is to move into the next index, and then the default case will collate numbers into the last finalArray, which is the third array [2]. Again
+                    // the string is cast to a float so it can be used for calculations below. In some cases the third array was assigned a value of zero for functions where only one input number would 
+                    // be acted on by the operator (e.g. the Sine function).
 
                     // Could have used switch statements below for cleaner code but wanted to show use of both disciplines
 
@@ -262,7 +342,7 @@ namespace Calculator___coursework_1
                 }
             }
         }
-    
+
         static float Addition(float a, float b)
         // created addiion function which accepts 2 floats as input parameters
         {
@@ -328,7 +408,7 @@ namespace Calculator___coursework_1
             result = a;
             for (i = a - 1; i >= 1; i--)
             {
-                result = result * i;
+                result *= i;
             }
             return result;
         }
@@ -345,6 +425,51 @@ namespace Calculator___coursework_1
         {
             float result = (float)Math.Sin(a);
             return result;
+        }
+
+        static bool Sanitize(string Input)
+        // function to sanitize user input. 3 checks needed to make sure the input is sane (other than above checks on certain inputs for operators and constants), these are for a decimal place, minus sign, and finally
+        // just to ensure that the input is numerical if it doesn't meet the other criteria.
+        {
+            bool TotalCheck = true;
+            bool DecimalCheck = false;
+            bool MinusCheck = false;
+
+            foreach (char character in Input)
+            // runs through each character within the input and checks them all with the below.
+            {
+                if (character == '.')
+                // if the character is a decimal then DecimalCheck is updated to true. In the case DecimalCheck is already true (i.e there is already a decimal in the input) then TotalCheck is set to false as the input
+                // cannot be considered sane if there is already a decimal place.
+                {
+                    if (DecimalCheck)
+                    {
+                        TotalCheck = false;
+                    }
+
+                    DecimalCheck = true;
+                }
+
+                if (character == '-')
+                // follows the same logic as the decimal check but for a minus sign. If there is one minus sign then TotalCheck will remain true (as it's default is), but if there is more than one minus sine in the
+                // input then the number is ot sane, so TotalCheck is updated to false and Sanitization will be false.
+                {
+                    if (MinusCheck)
+                    {
+                        TotalCheck = false;
+                    }
+
+                    MinusCheck = true;
+                }
+
+                else if (!char.IsDigit(character))
+                // the final check checks that any remaining characters are numerical by calling IsDigit. If IsDigit fails then TotalCheck is updated to false.
+                {
+                    TotalCheck = false;
+                }
+            }
+            // the TotalCheck is returned as per the output parameter (bool) of the function. This will be true if all sanity checks are passed, and false if any fail, as per the above logic.
+            return TotalCheck;
         }
     }
 }
